@@ -1,2 +1,12 @@
 venv/
 dataset.csv
+# Ignore Keras Tuner logs and trials
+my_dir/
+
+# Ignore saved models except the final one
+*.keras
+!mlp_bopflop.keras   
+
+# Ignore scaler and other artifacts EXCEPT the final one
+*.pkl
+!scaler.pkl
